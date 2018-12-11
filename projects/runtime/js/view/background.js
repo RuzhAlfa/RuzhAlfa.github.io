@@ -33,13 +33,13 @@ var background = function (window) {
 
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'black');
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'lime');
             background.addChild(backgroundFill);
             
             // TODO: 3 - Add a moon and starfield
             var circle;
             for(var i=0;i<100;i++) {
-            circle = draw.circle(5,'white','Gray',2);
+            circle = draw.circle(5,'white','gray',2);
             circle.x = canvasWidth*Math.random();
             circle.y = groundY*Math.random();
             background.addChild(circle);
